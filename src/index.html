@@ -65,13 +65,25 @@
             <img src="assets/images/oscar-hero.webp" alt="Oscar Ramos speaking at an event" />
             <div class="profile-card-footer">
               <span>Oscar Ramos</span>
-              <div class="profile-actions" aria-hidden="true">
-                <span class="profile-action">
+              <div class="profile-actions">
+                <a
+                  class="profile-action"
+                  href="https://x.com/realOscarRamos1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Oscar Ramos on X"
+                >
                   <img src="assets/icons/x-icon.svg" alt="" />
-                </span>
-                <span class="profile-action">
+                </a>
+                <a
+                  class="profile-action"
+                  href="https://www.youtube.com/@OscarRamos"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Oscar Ramos on YouTube"
+                >
                   <img src="assets/icons/youtube-icon.svg" alt="" />
-                </span>
+                </a>
               </div>
             </div>
           </article>
@@ -165,7 +177,7 @@
       <section class="section signup-section" aria-labelledby="signup-title">
         <div class="container signup-grid">
           <div class="signup-copy">
-            <h2 id="signup-title">Start trading alongside Oscar on WEEX</h2>
+            <h2 id="signup-title">Start trading alongside<br />Oscar on WEEX</h2>
             <p>Create an account using my referral link. Join me today and claim your exclusive rewards!</p>
             <button class="btn btn-light" type="button" data-redirect="weex">
               <span class="gift-icon" aria-hidden="true"></span>
@@ -175,19 +187,19 @@
 
           <div class="selling-grid">
             <article>
-              <h3>1000 BTC Protection Fund</h3>
+              <h3><span>1000 BTC</span> Protection Fund</h3>
               <p>Asset security first. Trade with confidence.</p>
             </article>
             <article>
-              <h3>Trusted By 10M+ Users</h3>
+              <h3>Trusted By <span>10M+</span> Users</h3>
               <p>Access crypto, U.S. stocks, gold, crude oil, and more-all from a single app.</p>
             </article>
             <article>
-              <h3>8 Years Of Proven Security</h3>
+              <h3><span>8 Years</span> Of Proven Security</h3>
               <p>8 years of trusted operations, built on a proven track record.</p>
             </article>
             <article>
-              <h3>Only 1 Email Is Required</h3>
+              <h3><span>Only 1 Email</span> Is Required</h3>
               <p>More privacy control. More freedom to trade.</p>
             </article>
           </div>
@@ -206,17 +218,17 @@
 
           <div class="community-grid">
             <article>
-              <span class="community-icon signal-icon" aria-hidden="true"></span>
+              <img class="community-icon" src="assets/images/community-signals.webp" width="320" height="320" alt="" aria-hidden="true" />
               <h3>Real-Time Trading Signals</h3>
               <p>Get instant market updates and potential trade setups directly from Oscar.</p>
             </article>
             <article>
-              <span class="community-icon gift-box-icon" aria-hidden="true"></span>
+              <img class="community-icon" src="assets/images/community-giveaways.webp" width="80" height="80" alt="" aria-hidden="true" />
               <h3>Exclusive Community Giveaways</h3>
               <p>Participate in Discord-only events, airdrops, and WEEX bonus check-ins.</p>
             </article>
             <article>
-              <span class="community-icon network-icon" aria-hidden="true"></span>
+              <img class="community-icon" src="assets/images/community-network.webp" width="320" height="320" alt="" aria-hidden="true" />
               <h3>Elite Trader Network</h3>
               <p>Chat, share strategies, and grow your portfolio alongside a global trading family.</p>
             </article>
@@ -238,64 +250,121 @@
             <img class="brand-logo" src="assets/images/weex-logo.webp" alt="WEEX" />
           </a>
           <div class="socials" aria-label="WEEX social links">
-            <span>f</span>
-            <span>x</span>
-            <span>in</span>
-            <span>tg</span>
-            <span>yt</span>
-            <span>ig</span>
-            <span>dc</span>
-            <span>m</span>
+            <a class="social" href="https://www.facebook.com/WEEXGlobal" target="_blank" rel="noopener noreferrer" aria-label="WEEX on Facebook">
+              <img src="assets/icons/footer-facebook.svg" alt="" />
+            </a>
+            <a class="social" href="https://www.youtube.com/@WEEX_Global" target="_blank" rel="noopener noreferrer" aria-label="WEEX on YouTube">
+              <img src="assets/icons/footer-youtube.svg" alt="" />
+            </a>
+            <a class="social" href="https://coinmarketcap.com/exchanges/weex/" target="_blank" rel="noopener noreferrer" aria-label="WEEX on CoinMarketCap">
+              <img src="assets/icons/footer-coinmarketcap.svg" alt="" />
+            </a>
+            <a class="social" href="https://t.me/WeexGlobal_Group" target="_blank" rel="noopener noreferrer" aria-label="WEEX on Telegram">
+              <img src="assets/icons/footer-telegram.svg" alt="" />
+            </a>
+            <a class="social" href="https://discord.gg/2CFnGbMzbh" target="_blank" rel="noopener noreferrer" aria-label="WEEX on Discord">
+              <img src="assets/icons/footer-discord.svg" alt="" />
+            </a>
+            <a class="social" href="https://www.linkedin.com/company/weex-global/" target="_blank" rel="noopener noreferrer" aria-label="WEEX on LinkedIn">
+              <img src="assets/icons/footer-linkedin.svg" alt="" />
+            </a>
+            <a class="social" href="https://x.com/WEEX_Official" target="_blank" rel="noopener noreferrer" aria-label="WEEX on X">
+              <img src="assets/icons/footer-x.svg" alt="" />
+            </a>
           </div>
         </div>
 
         <div class="footer-links">
-          <div>
-            <h3>About</h3>
-            <a href="#">About Us</a>
-            <a href="#">Media Kit</a>
-            <a href="#">WEEX Community</a>
-            <a href="#">Announcements</a>
+          <div class="footer-column-stack">
+            <div>
+              <h3>About</h3>
+              <a href="https://www.weex.com/aboutus">About Us</a>
+              <a href="https://www.weex.com/Media-kit">Media Kit</a>
+              <a href="https://www.weex.com/community">WEEX Community</a>
+              <a href="https://www.weex.com/wxt">WXT Zone</a>
+              <a href="https://www.weex.com/help/categories/18540264809497-Latest-Announcement">Announcement</a>
+              <a href="https://www.weex.com/events/weex-laliga">WEEX x LALIGA</a>
+            </div>
+            <div>
+              <h3>Support</h3>
+              <a href="https://www.weex.com/help">Help Center</a>
+              <a href="https://www.weex.com/support/rate">Fee Schedule</a>
+              <a href="https://www.weex.com/help/sections/4411638039833">Trading Rules</a>
+              <a href="https://www.weex.com/official-verification">Contact Verifier</a>
+              <a href="https://reurl.cc/mkKWEj">Submit Feedback</a>
+            </div>
           </div>
-          <div>
-            <h3>Support</h3>
-            <a href="#">Help Center</a>
-            <a href="#">Fee Schedule</a>
-            <a href="#">Trading Rules</a>
-            <a href="#">Official Verification</a>
+
+          <div class="footer-column-stack">
+            <div>
+              <h3>Compliance</h3>
+              <a href="https://www.weex.com/help/articles/4417379598745">Legal Statement</a>
+              <a href="https://www.weex.com/help/articles/9544830692505">Risk Disclosure</a>
+              <a href="https://www.weex.com/help/articles/4417379529241">Terms and Policies</a>
+              <a href="https://www.weex.com/help/articles/4417383227545">Privacy Policy</a>
+              <a href="https://www.weex.com/help/articles/9544541660057">Whistleblower Notice</a>
+              <a href="https://www.weex.com/help/articles/4417379667481">AML/CTF Policy</a>
+              <a href="https://www.weex.com/help/articles/37782530742681">Law Enforcement</a>
+            </div>
+            <div>
+              <h3>Contact Us</h3>
+              <a href="https://t.me/WEEX_support_smart_Bot">Customer Support Bot</a>
+              <a href="mailto:support@weex.com">VIP Services</a>
+            </div>
           </div>
-          <div>
-            <h3>Compliance</h3>
-            <a href="#">Legal Statement</a>
-            <a href="#">Risk Disclosure</a>
-            <a href="#">User Agreement</a>
-            <a href="#">Privacy Policy</a>
+
+          <div class="footer-column-stack">
+            <div>
+              <h3>Products</h3>
+              <a href="https://www.weex.com/futures/BTC-USDT">Futures</a>
+              <a href="https://www.weex.com/spot/BTC-USDT">Spot</a>
+              <a href="https://www.weex.com/help/categories/6659177619865">Copy Trade</a>
+              <a href="https://www.weex.com/markets">Markets</a>
+              <a href="https://www.weex.com/shop">WEEX Store</a>
+            </div>
+            <div>
+              <h3>Services</h3>
+              <a href="https://www.weex.com/proof-of-reserves">Proof of Reserves</a>
+              <a href="https://www.weex.com/useragent">Invite Friends</a>
+              <a href="https://www.weex.com/help/categories/4467195499673">OTC</a>
+              <a href="https://www.weex.com/download">Download</a>
+              <a href="https://www.weex.com/affiliate">Affiliate</a>
+              <a href="https://www.weex.com/help/articles/14584885794329">VIP Program</a>
+              <a href="https://www.weex.com/weex-API">API</a>
+              <a href="https://www.weex.com/weex-broker">Broker</a>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSd1776RfBxk44dMSjbBXwTaYcx-yaNOzHnXdmzBj4ioIKrAXA/viewform?usp=dialog">Listing Application</a>
+              <a href="https://www.weex.com/help/articles/16598153464857">Affiliate T&amp;C</a>
+              <a href="https://www.weex.com/sitemap">Sitemap</a>
+            </div>
           </div>
+
           <div>
-            <h3>Product</h3>
-            <a href="#">Invite Friends</a>
-            <a href="#">Futures</a>
-            <a href="#">Spot</a>
-            <a href="#">Copy Trade</a>
-          </div>
-          <div>
-            <h3>Learn</h3>
-            <a href="#">FAQ</a>
-            <a href="#">Spot</a>
-            <a href="#">Futures</a>
-            <a href="#">Crypto prices</a>
+            <h3>Resources</h3>
+            <a href="https://www.weex.com/help/categories/4410757386393">User Guide</a>
+            <a href="https://www.weex.com/learn">Learn</a>
+            <a href="https://www.weex.com/questions">Q&amp;A</a>
+            <a href="https://www.weex.com/help/sections/4411635873049">Spot</a>
+            <a href="https://www.weex.com/help/sections/4411638039833">Futures</a>
+            <a href="https://www.weex.com/help/sections/4410854448409">Glossary</a>
+            <a href="https://www.weex.com/etf">ETFs</a>
+            <a href="https://www.weex.com/tokens">Crypto Prices</a>
+            <a href="https://www.weex.com/price-prediction">Price Predictions</a>
+            <a href="https://www.weex.com/tokens/weex-token">WXT Price</a>
+            <a href="https://www.weex.com/tokens/bitcoin">BTC Price</a>
+            <a href="https://www.weex.com/tokens/ethereum">ETH Price</a>
+            <a href="https://www.weex.com/tokens/dogecoin">DOGE Price</a>
+            <a href="https://www.weex.com/how-to-buy">How to Buy Crypto</a>
+            <a href="https://www.weex.com/how-to-buy/weex-token">How to Buy WXT</a>
+            <a href="https://www.weex.com/how-to-buy/bitcoin">How to Buy BTC</a>
+            <a href="https://www.weex.com/how-to-buy/ethereum">How to Buy ETH</a>
+            <a href="https://www.weex.com/how-to-buy/dogecoin">How to Buy DOGE</a>
           </div>
         </div>
 
         <div class="footer-download">
           <h3>Equip your AI.<br />Dominate the market</h3>
-          <div class="qr" aria-label="Download app QR code">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <p>Download App</p>
+          <img class="footer-qr" src="assets/images/footer-download-qr.webp" width="100" height="100" alt="WEEX app download QR code" />
+          <p>Download app</p>
           <button class="btn btn-light btn-small" type="button" data-redirect="weex">Sign Up</button>
         </div>
       </div>
