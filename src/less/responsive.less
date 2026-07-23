@@ -1,0 +1,234 @@
+@media (max-width: 1180px) {
+  .container {
+    width: calc(100% - 80px);
+    min-width: 0;
+  }
+
+  .hero-grid,
+  .signup-grid {
+    gap: 70px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 46px;
+  }
+
+  .footer-links {
+    grid-template-columns: repeat(5, minmax(100px, 1fr));
+  }
+}
+
+@media (max-width: 1024px) {
+  .section {
+    padding: 76px 0;
+  }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: calc(100% - 48px);
+    max-width: @figma-container-width;
+    min-width: 0;
+    height: auto;
+    gap: 46px;
+  }
+
+  .profile-card {
+    width: min(100%, 430px);
+    justify-self: center;
+  }
+
+  .reward-grid,
+  .signup-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rewards-section {
+    .container {
+      width: calc(100% - 48px);
+    }
+  }
+
+  .reward-card {
+    width: 100%;
+    height: auto;
+  }
+
+  .signup-grid {
+    gap: 42px;
+  }
+
+  .footer-links {
+    grid-template-columns: repeat(3, minmax(130px, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: calc(100% - 32px);
+  }
+
+  .section {
+    padding: 58px 0;
+  }
+
+  .site-header {
+    padding: 12px 0 4px;
+  }
+
+  .nav {
+    grid-template-columns: 1fr auto;
+  }
+
+  .nav-actions {
+    justify-self: end;
+  }
+
+  .hero {
+    padding: 58px 0;
+  }
+
+  .hero-copy {
+    text-align: left;
+
+    h1 {
+      font-size: 36px;
+
+      strong {
+        font-size: 36px;
+      }
+    }
+  }
+
+  .hero-subtitle {
+    font-size: 15px;
+  }
+
+  .countdown {
+    flex-wrap: wrap;
+  }
+
+  .hero-cta,
+  .signup-copy .btn,
+  .center-action .btn {
+    width: 100%;
+  }
+
+  .profile-card {
+    img {
+      height: 100%;
+    }
+  }
+
+  .reward-card {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 26px 20px;
+  }
+
+  .reward-art {
+    justify-self: center;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+    gap: 34px;
+
+    &::before {
+      top: 16px;
+      bottom: 16px;
+      left: 50%;
+      right: auto;
+      border-top: 0;
+      border-left: 2px dotted #4a4a4a;
+      transform: translateX(-1px);
+    }
+
+    li {
+      padding-top: 0;
+    }
+
+    p {
+      max-width: 330px;
+    }
+  }
+
+  .selling-grid,
+  .community-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .signup-copy {
+    h2 {
+      font-size: 34px;
+    }
+  }
+
+  .footer-links {
+    grid-template-columns: repeat(2, minmax(120px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .brand {
+    width: 134px;
+    height: 28px;
+  }
+
+  .brand-logo {
+    width: 134px;
+    height: 28px;
+  }
+
+  .btn {
+    min-height: 50px;
+    padding: 0 22px;
+    font-size: 13px;
+  }
+
+  .btn-small {
+    min-height: 32px;
+    padding: 0 14px;
+    font-size: 11px;
+  }
+
+  .nav .btn-small {
+    width: 124px;
+    height: 32px;
+    padding: 0;
+  }
+
+  .hero-copy h1 {
+    font-size: 30px;
+
+    strong {
+      font-size: 30px;
+    }
+  }
+
+  .time-box {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .profile-card {
+    width: min(100%, 348px);
+    height: auto;
+    aspect-ratio: 1;
+  }
+
+  .profile-card-footer {
+    width: 100%;
+  }
+
+  .reward-copy h3,
+  .steps h3 {
+    font-size: 20px;
+  }
+
+  .footer-links {
+    grid-template-columns: 1fr;
+  }
+}
