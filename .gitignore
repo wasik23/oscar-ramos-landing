@@ -1,0 +1,19 @@
+node_modules/
+
+# Build output
+dist/css/*.css
+dist/css/*.css.map
+
+# Local/editor files
+.DS_Store
+Thumbs.db
+.env
+.env.*
+.vscode/
+.idea/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
