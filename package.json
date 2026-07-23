@@ -6,7 +6,7 @@
   "scripts": {
     "build:css": "lessc src/less/main.less dist/css/main.css",
     "watch:css": "lessc --watch src/less/main.less dist/css/main.css",
-    "serve": "live-server src --port=3000 --watch=src,dist",
+    "serve": "live-server . --port=3000 --watch=src,dist --open=src/index.html",
     "dev": "concurrently \"npm:watch:css\" \"npm:serve\""
   },
   "keywords": [],
