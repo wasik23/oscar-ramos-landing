@@ -14,8 +14,8 @@
     gap: 46px;
   }
 
-  .footer-links {
-    grid-template-columns: repeat(4, minmax(140px, 1fr));
+  .footer-download {
+    justify-self: start;
   }
 }
 
@@ -70,43 +70,135 @@
   }
 
   .section {
-    padding: 58px 0;
+    padding: 52px 0;
   }
 
   .site-header {
-    padding: 12px 0 4px;
+    padding: 32px 0 24px;
   }
 
   .nav {
     grid-template-columns: 1fr auto;
+    gap: 16px;
+    min-height: 44px;
   }
 
   .nav-actions {
     justify-self: end;
   }
 
+  .brand {
+    width: 50px;
+    overflow: hidden;
+  }
+
+  .brand-logo {
+    max-width: none;
+  }
+
+  .nav .btn-small {
+    width: 124px;
+    min-height: 32px;
+    height: 32px;
+    border-radius: 100px;
+    font-size: 14px;
+  }
+
   .hero {
-    padding: 58px 0;
+    padding: 0 0 68px;
+  }
+
+  .hero-grid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+  }
+
+  .profile-card {
+    order: 1;
+    width: 100%;
+    height: 365px;
+    border: 0;
+    border-radius: 0;
+    justify-self: stretch;
+
+    img {
+      height: 100%;
+      border-radius: 0;
+      object-position: 56% center;
+    }
+
+    &::after {
+      height: 50%;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0), #000000);
+    }
+  }
+
+  .profile-card-footer {
+    right: 16px;
+    bottom: 60px;
+    left: 16px;
+    width: auto;
+    height: 55.2px;
+    padding: 9px 10px 9px 16px;
+    border-radius: 18px;
+
+    > span {
+      font-size: 14px;
+    }
+  }
+
+  .profile-actions {
+    width: auto;
+    height: 32px;
+    gap: 8px;
+  }
+
+  .profile-action {
+    width: 32px;
+    height: 32px;
+
+    img {
+      width: 15px;
+      height: 15px;
+    }
   }
 
   .hero-copy {
-    text-align: left;
+    order: 2;
+    position: relative;
+    z-index: 2;
+    width: calc(100% - 32px);
+    margin: -48px auto 0;
+    text-align: center;
 
     h1 {
-      font-size: 36px;
+      font-size: 26px;
+      line-height: 1.18;
 
       strong {
-        font-size: 36px;
+        font-size: 26px;
       }
     }
   }
 
+  .mobile-break {
+    display: block;
+  }
+
   .hero-subtitle {
-    font-size: 15px;
+    margin: 12px 0;
+    color: #d1d1d2;
+    font-size: 16px;
+    font-weight: 700;
   }
 
   .countdown {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 6px;
+    margin: 0 0 20px;
   }
 
   .hero-cta,
@@ -115,42 +207,241 @@
     width: 100%;
   }
 
-  .profile-card {
-    img {
+  .countdown-label,
+  .time-unit,
+  .time-separator {
+    font-size: 14px;
+  }
+
+  .time-box {
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    border-radius: 6px;
+
+    span {
+      width: 100%;
       height: 100%;
+      font-size: 14px;
     }
   }
 
-  .reward-card {
-    grid-template-columns: 1fr;
-    gap: 18px;
-    padding: 26px 20px;
+  .hero-cta {
+    min-height: 34px;
+    height: 34px;
+    font-family: @font;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0;
   }
 
-  .reward-art {
-    justify-self: center;
+  .rewards-section {
+    padding-top: 0;
+
+    .container {
+      width: 100%;
+    }
+
+    .section-heading {
+      width: calc(100% - 32px);
+      margin-bottom: 18px;
+    }
+  }
+
+  #rewards-title,
+  #steps-title,
+  #community-title,
+  .signup-copy h2 {
+    font-size: 18px;
+    line-height: 1.12;
+  }
+
+  #rewards-title {
+    font-size: 20px;
+  }
+
+  #rewards-title + p,
+  #community-title + p,
+  .signup-copy p {
+    font-size: 10px;
+    line-height: 1.2;
+  }
+
+  #rewards-title + p {
+    font-size: 14px;
+  }
+
+  .reward-grid {
+    grid-template-columns: 1fr;
+    width: calc(100% - 32px);
+    margin: 0 auto;
+  }
+
+  .stock-futures-mobile {
+    position: relative;
+    display: block;
+    width: calc(100% - 16px);
+    min-height: 132px;
+    margin: 8px auto 0;
+    overflow: hidden;
+    padding: 16px 120px 16px 16px;
+    border-radius: 8px;
+    background:
+      radial-gradient(circle at 82% 50%, rgba(255, 235, 82, 0.42), transparent 32%),
+      linear-gradient(135deg, #d56d0d 0%, #a84c06 48%, #713000 100%);
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: -40px;
+      bottom: -56px;
+      width: 178px;
+      height: 178px;
+      border: 18px solid rgba(255, 235, 82, 0.34);
+      border-radius: 50%;
+    }
+
+    h3 {
+      position: relative;
+      z-index: 1;
+      max-width: 175px;
+      margin: 14px 0 7px;
+      color: @yellow;
+      font-size: 17px;
+      font-weight: 900;
+      line-height: 1.05;
+
+      span {
+        display: block;
+        color: @white;
+      }
+    }
+
+    p {
+      position: relative;
+      z-index: 1;
+      max-width: 135px;
+      margin: 0;
+      color: @white;
+      font-size: 12px;
+      font-weight: 800;
+      line-height: 1.12;
+    }
+  }
+
+  .stock-banner-brand {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: @white;
+    font-size: 9px;
+    font-weight: 800;
+
+    img {
+      width: 58px;
+      height: auto;
+    }
+  }
+
+  .stock-banner-art {
+    position: absolute;
+    right: 18px;
+    bottom: 9px;
+    z-index: 1;
+    width: 98px;
+    height: 98px;
+    object-fit: contain;
+    filter: drop-shadow(0 10px 16px rgba(0, 0, 0, 0.45));
   }
 
   .steps {
     grid-template-columns: 1fr;
-    gap: 34px;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    gap: 18px;
 
     &::before {
       top: 16px;
-      bottom: 16px;
-      left: 50%;
+      bottom: 20px;
+      left: 8px;
       right: auto;
       border-top: 0;
       border-left: 2px dotted #4a4a4a;
-      transform: translateX(-1px);
+      transform: none;
     }
 
     li {
+      display: grid;
+      grid-template-columns: 18px minmax(0, 1fr);
+      column-gap: 14px;
       padding-top: 0;
+      text-align: left;
+    }
+
+    h3,
+    p {
+      text-align: left;
+    }
+
+    h3 {
+      margin: 0 0 6px;
+      font-size: 12px;
+      line-height: 1.25;
     }
 
     p {
-      max-width: 330px;
+      grid-column: 2;
+      max-width: none;
+      font-size: 9px;
+      line-height: 1.35;
+    }
+  }
+
+  .step-number {
+    width: 16px;
+    height: 16px;
+    font-size: 10px;
+  }
+
+  .signup-section,
+  .steps-section,
+  .community-section {
+    padding-top: 52px;
+    padding-bottom: 52px;
+  }
+
+  .signup-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .signup-copy {
+    display: contents;
+
+    h2,
+    p {
+      text-align: center;
+    }
+
+    h2 {
+      order: 1;
+      max-width: 260px;
+      margin: 0 auto;
+    }
+
+    p {
+      order: 2;
+      max-width: 320px;
+      margin: -8px auto 8px;
+    }
+
+    .btn {
+      display: none;
     }
   }
 
@@ -159,38 +450,172 @@
     grid-template-columns: 1fr;
   }
 
+  .selling-grid {
+    order: 3;
+    width: 100%;
+    gap: 16px;
+
+    article {
+      min-height: 92px;
+      gap: 7px;
+      padding: 22px 32px;
+      border-radius: 24px;
+      background: var(--Background-fill-fill-card_3, #ffffff0d);
+    }
+
+    article:nth-child(2) {
+      order: 4;
+    }
+
+    article:nth-child(3) {
+      order: 2;
+    }
+
+    article:nth-child(4) {
+      order: 3;
+    }
+
+    h3 {
+      color: @text;
+      font-size: 26px;
+      line-height: 1.05;
+
+      span {
+        display: block;
+        margin-bottom: 18px;
+        color: @yellow;
+      }
+    }
+
+    p {
+      color: #8b8b8e;
+      font-size: 22px;
+      line-height: 1.25;
+    }
+
+    article:nth-child(4) {
+      h3 {
+        text-align: center;
+      }
+
+      h3 span {
+        margin-bottom: 18px;
+      }
+
+      h3 em {
+        display: none;
+      }
+    }
+  }
+
+  .mobile-signup-cta {
+    order: 4;
+    display: inline-flex;
+    min-height: 112px;
+    height: 112px;
+    margin-top: 48px;
+    border-radius: 999px;
+    font-size: 34px;
+  }
+
   .community-grid {
+    gap: 12px;
+
     article {
       width: 100%;
+      height: 126px;
+      padding: 14px 18px;
+      border-radius: 8px;
+    }
+
+    h3 {
+      margin-bottom: 5px;
+      font-size: 12px;
+    }
+
+    p {
+      font-size: 9px;
+      line-height: 1.25;
     }
   }
 
-  .signup-copy {
-    h2 {
-      font-size: 34px;
+  .community-icon {
+    width: 44px;
+    height: 44px;
+    margin-bottom: 8px;
+  }
+
+  .center-action {
+    margin-top: 18px;
+
+    .btn {
+      min-height: 44px;
+      height: 44px;
+      font-size: 12px;
     }
   }
 
-  .footer-links {
-    grid-template-columns: 1fr;
+  .site-footer {
+    padding: 0 0 28px;
+  }
+
+  .footer-grid {
+    display: block;
+  }
+
+  .footer-brand {
+    .brand {
+      display: none;
+    }
+  }
+
+  .footer-community-title {
+    display: block;
+    margin: 0 0 12px;
+    color: #d1d1d2;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .socials {
+    gap: 12px;
+
+    a,
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .footer-download {
+    display: none;
   }
 }
 
 @media (max-width: 480px) {
   .brand {
-    width: 134px;
+    width: 50px;
     height: 28px;
+    overflow: hidden;
   }
 
   .brand-logo {
     width: 134px;
     height: 28px;
+    max-width: none;
   }
 
   .btn {
     min-height: 50px;
     padding: 0 22px;
     font-size: 13px;
+  }
+
+  .hero-cta {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0;
   }
 
   .btn-small {
@@ -206,32 +631,43 @@
   }
 
   .hero-copy h1 {
-    font-size: 30px;
+    font-size: 26px;
 
     strong {
-      font-size: 30px;
+      font-size: 26px;
     }
   }
 
   .time-box {
-    width: 40px;
-    height: 40px;
-    font-size: 18px;
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    font-size: 14px;
   }
 
   .profile-card {
-    width: min(100%, 348px);
-    height: auto;
-    aspect-ratio: 1;
+    width: 100%;
+    height: 365px;
+    aspect-ratio: auto;
+    border-radius: 0;
+
+    img {
+      border-radius: 0;
+    }
   }
 
   .profile-card-footer {
-    width: 100%;
+    width: auto;
   }
 
-  .reward-copy h3,
   .steps h3 {
-    font-size: 20px;
+    font-size: 12px;
+  }
+
+  .mobile-signup-cta {
+    min-height: 112px;
+    height: 112px;
+    font-size: 34px;
   }
 
 }

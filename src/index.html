@@ -36,14 +36,15 @@
         <div class="container hero-grid">
           <div class="hero-copy">
             <h1>
-              Claim Your Exclusive XRP Airdrop & Unlock Up to
+              Claim Your Exclusive XRP <br class="mobile-break" />Airdrop & Unlock Up to
+              <br class="mobile-break" />
               <strong>$15,000 USDT</strong> in Rewards!
             </h1>
             <p class="hero-subtitle">0% Trial fund/No KYC/Double Rewards</p>
 
             <div
               class="countdown"
-              data-countdown-target="2026-08-01T23:59:59+06:00"
+              data-countdown-days="30"
               aria-label="Campaign countdown"
             >
               <span class="countdown-label">Ends in</span>
@@ -62,7 +63,10 @@
           </div>
 
           <article class="profile-card" aria-label="Oscar Ramos profile">
-            <img src="assets/images/oscar-hero.webp" alt="Oscar Ramos speaking at an event" />
+            <picture>
+              <source media="(max-width: 767px)" srcset="assets/images/h5.webp" />
+              <img src="assets/images/web.webp" alt="Oscar Ramos speaking at an event" />
+            </picture>
             <div class="profile-card-footer">
               <span>Oscar Ramos</span>
               <div class="profile-actions">
@@ -98,48 +102,21 @@
           </div>
 
           <div class="reward-grid">
-            <article class="reward-card">
-              <span class="event-tag">Event 1</span>
-              <div class="reward-copy">
-                <h3>Exclusive XRP Airdrop</h3>
-                <p class="accent-text">Grab Free XRP Just for Joining!</p>
-
-                <div class="progress-row">
-                  <span class="progress-label">Net deposit >= <span class="reward-highlight">200 USDT</span> and hold for 3 consecutive days.</span>
-                  <strong>60%</strong>
-                  <div class="progress-track"><span style="width: 252px"></span></div>
-                </div>
-                <div class="progress-row">
-                  <span class="progress-label">Net deposit >= <span class="reward-highlight">200 USDT</span> and hold for 3 consecutive days.</span>
-                  <strong>30%</strong>
-                  <div class="progress-track"><span style="width: 84px"></span></div>
-                </div>
-              </div>
-              <div class="reward-art" aria-hidden="true">
-                <img src="assets/images/reward-airdrop.webp" alt="" />
-              </div>
+            <article class="reward-image-card" data-redirect="welcome">
+              <a href="https://www.weex.com/events/welcome-event?vipCode=xz3u&qrType=activity" data-redirect="welcome">
+                <img
+                  src="assets/images/reward-deposit-trade.webp"
+                  alt="Deposit 100 and trade to get 40 USDT back"
+                />
+              </a>
             </article>
-
-            <article class="reward-card">
-              <span class="event-tag">Event 2</span>
-              <div class="reward-copy">
-                <h3>Deposit $100 & Get $20 USDT!</h3>
-                <p class="accent-text">Supercharge Your Portfolio with a 20% Boost!</p>
-
-                <div class="progress-row">
-                  <span class="progress-label">Futures trading volume >= <span class="reward-highlight">10,000 USDT</span></span>
-                  <strong>60%</strong>
-                  <div class="progress-track"><span style="width: 252px"></span></div>
-                </div>
-                <div class="progress-row">
-                  <span class="progress-label">Futures trading volume >= <span class="reward-highlight">10,000 USDT</span></span>
-                  <strong>30%</strong>
-                  <div class="progress-track"><span style="width: 84px"></span></div>
-                </div>
-              </div>
-              <div class="reward-art" aria-hidden="true">
-                <img src="assets/images/reward-deposit.webp" alt="" />
-              </div>
+            <article class="reward-image-card" data-redirect="stocks">
+              <a href="https://www.weex.com/events/promo/wxt-stocks?vipCode=xz3u&qrType=activity" data-redirect="stocks">
+                <img
+                  src="assets/images/reward-stock-futures.webp"
+                  alt="Trade stock futures with first trade protection"
+                />
+              </a>
             </article>
           </div>
         </div>
@@ -155,20 +132,24 @@
             <li>
               <span class="step-number">1</span>
               <h3>Sign Up</h3>
-              <p>Register a WEEX account via Oscar's exclusive link on this page.</p>
+              <p>Register a WEEX account via Oscar's exclusive link on this page (takes only 30 seconds!).</p>
             </li>
             <li>
               <span class="step-number">2</span>
               <h3>Deposit & Trade</h3>
               <p>
-                Deposit at least $100 USDT to qualify for the $20 trial fund or scale up
-                trading volume.
+                Deposit at least $100 USDT to instantly qualify for the $20 trial fund to
+                start, or scale up your trading to unlock your share of the $15,000 prize
+                pool.
               </p>
             </li>
             <li>
               <span class="step-number">3</span>
               <h3>Receive Rewards</h3>
-              <p>Rewards are credited directly to your WEEX account after tracking.</p>
+              <p>
+                Check your account! Monthly data is tracked automatically, and your rewards
+                will be credited directly to your WEEX account.
+              </p>
             </li>
           </ol>
         </div>
@@ -187,22 +168,27 @@
 
           <div class="selling-grid">
             <article>
-              <h3><span>1000 BTC</span> Protection Fund</h3>
+              <h3><span>1000 BTC</span> <em>Protection Fund</em></h3>
               <p>Asset security first. Trade with confidence.</p>
             </article>
             <article>
-              <h3>Trusted By <span>10M+</span> Users</h3>
+              <h3><em>Trusted By</em> <span>10M+</span> <em>Users</em></h3>
               <p>Access crypto, U.S. stocks, gold, crude oil, and more-all from a single app.</p>
             </article>
             <article>
-              <h3><span>8 Years</span> Of Proven Security</h3>
+              <h3><span>8 Years</span> <em>Of Proven Security</em></h3>
               <p>8 years of trusted operations, built on a proven track record.</p>
             </article>
             <article>
-              <h3><span>Only 1 Email</span> Is Required</h3>
+              <h3><span>Only 1 Email</span> <em>Is Required</em></h3>
               <p>More privacy control. More freedom to trade.</p>
             </article>
           </div>
+
+          <button class="btn btn-light mobile-signup-cta" type="button" data-redirect="weex">
+            <span class="gift-icon" aria-hidden="true"></span>
+            Sign up for $20
+          </button>
         </div>
       </section>
 
@@ -211,8 +197,8 @@
           <div class="section-heading">
             <h2 id="community-title">Join Oscar's Exclusive Trading Circle</h2>
             <p>
-              Don't navigate the market alone! Connect with Oscar and thousands of like-minded
-              traders inside our official Discord community.
+              Don't navigate the market alone! Connect with Oscar and thousands of<br />
+              like-minded traders inside our official Discord community.
             </p>
           </div>
 
@@ -249,6 +235,7 @@
           <a class="brand" href="#" data-redirect="weex" aria-label="WEEX home">
             <img class="brand-logo" src="assets/images/weex-logo.webp" alt="WEEX" />
           </a>
+          <h3 class="footer-community-title">Community</h3>
           <div class="socials" aria-label="WEEX social links">
             <a class="social" href="https://www.facebook.com/WEEXGlobal" target="_blank" rel="noopener noreferrer" aria-label="WEEX on Facebook">
               <img src="assets/icons/footer-facebook.svg" alt="" />
@@ -362,7 +349,7 @@
         </div>
 
         <div class="footer-download">
-          <h3>Equip your AI.<br />Dominate the market</h3>
+          <h3>Equip your AI. Dominate the market</h3>
           <img class="footer-qr" src="assets/images/footer-download-qr.webp" width="100" height="100" alt="WEEX app download QR code" />
           <p>Download app</p>
           <button class="btn btn-light btn-small" type="button" data-redirect="weex">Sign Up</button>

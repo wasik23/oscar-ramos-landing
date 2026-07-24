@@ -1,7 +1,9 @@
 (function () {
   var links = {
-    weex: "https://www.weex.com/register",
-    discord: "https://bit.ly/patreon-ramos"
+    weex: "https://www.weex.com/register?vipCode=xz3u",
+    discord: "https://bit.ly/patreon-ramos",
+    welcome: "https://www.weex.com/events/welcome-event?vipCode=xz3u&qrType=activity",
+    stocks: "https://www.weex.com/events/promo/wxt-stocks?vipCode=xz3u&qrType=activity"
   };
 
   function pad(value) {
@@ -9,13 +11,16 @@
   }
 
   function initCountdown() {
-    var countdown = document.querySelector("[data-countdown-target]");
+    var countdown = document.querySelector("[data-countdown-days], [data-countdown-target]");
 
     if (!countdown) {
       return;
     }
 
-    var target = new Date(countdown.getAttribute("data-countdown-target")).getTime();
+    var countdownDays = Number(countdown.getAttribute("data-countdown-days"));
+    var target = Number.isFinite(countdownDays) && countdownDays > 0
+      ? Date.now() + countdownDays * 86400000
+      : new Date(countdown.getAttribute("data-countdown-target")).getTime();
     var units = {
       days: countdown.querySelector('[data-unit="days"]'),
       hours: countdown.querySelector('[data-unit="hours"]'),
