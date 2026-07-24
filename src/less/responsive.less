@@ -145,23 +145,36 @@
     border-radius: 18px;
 
     > span {
-      font-size: 14px;
+      font-family: @font;
+      font-size: 17.6px;
+      font-weight: 700;
+      font-style: normal;
+      line-height: 1;
+      letter-spacing: 0;
+      vertical-align: middle;
     }
   }
 
   .profile-actions {
     width: auto;
-    height: 32px;
+    height: 36px;
     gap: 8px;
   }
 
   .profile-action {
-    width: 32px;
-    height: 32px;
+    width: 36px;
+    height: 36px;
 
-    img {
-      width: 15px;
-      height: 15px;
+    &[aria-label="Oscar Ramos on X"] img {
+      width: 12.857609748840332px;
+      height: 12.85715389251709px;
+      opacity: 1;
+    }
+
+    &[aria-label="Oscar Ramos on YouTube"] img {
+      width: 15.428573608398438px;
+      height: 15.428573608398438px;
+      opacity: 1;
     }
   }
 
@@ -187,11 +200,24 @@
     display: block;
   }
 
+  .desktop-break {
+    display: none;
+  }
+
+  .mobile-nowrap {
+    white-space: nowrap;
+  }
+
   .hero-subtitle {
     margin: 12px 0;
     color: #d1d1d2;
-    font-size: 16px;
-    font-weight: 700;
+    font-family: @font;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: 0;
+    text-align: center;
   }
 
   .countdown {
@@ -238,6 +264,7 @@
 
   .rewards-section {
     padding-top: 0;
+    padding-bottom: 34px;
 
     .container {
       width: 100%;
@@ -261,6 +288,19 @@
     font-size: 20px;
   }
 
+  #steps-title {
+    font-family: @font;
+    max-width: 285px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: 0;
+    text-align: center;
+  }
+
   #rewards-title + p,
   #community-title + p,
   .signup-copy p {
@@ -272,9 +312,37 @@
     font-size: 14px;
   }
 
+  #community-title {
+    color: var(--Text-text-primary, #ffffff);
+    font-family: @font;
+    max-width: 285px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: 0;
+    text-align: center;
+  }
+
+  #community-title + p {
+    max-width: 340px;
+    margin: 8px auto 0;
+    color: var(--Text-text-secondary, #d1d1d2);
+    font-family: @font;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: 0;
+    text-align: center;
+  }
+
   .reward-grid {
     grid-template-columns: 1fr;
     width: calc(100% - 32px);
+    gap: 16px;
     margin: 0 auto;
   }
 
@@ -362,62 +430,95 @@
     width: 100%;
     max-width: none;
     margin: 0;
-    gap: 18px;
+    gap: 16px;
 
     &::before {
-      top: 16px;
-      bottom: 20px;
-      left: 8px;
-      right: auto;
-      border-top: 0;
-      border-left: 2px dotted #4a4a4a;
-      transform: none;
+      display: none;
     }
 
     li {
+      position: relative;
       display: grid;
-      grid-template-columns: 18px minmax(0, 1fr);
-      column-gap: 14px;
+      grid-template-columns: 20px minmax(0, 1fr);
+      column-gap: 12px;
       padding-top: 0;
       text-align: left;
-    }
 
-    h3,
-    p {
-      text-align: left;
+      &:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        top: 20px;
+        bottom: -16px;
+        left: 9px;
+        width: 2px;
+        background: url("../../src/assets/icons/step-line.svg") center top / 2px 177px repeat-y;
+      }
     }
 
     h3 {
-      margin: 0 0 6px;
-      font-size: 12px;
-      line-height: 1.25;
+      grid-column: 2;
+      margin: 0 0 8px;
+      font-family: @font;
+      font-size: 16px;
+      font-weight: 700;
+      font-style: normal;
+      line-height: 1;
+      letter-spacing: 0;
+      text-align: left;
+      text-transform: capitalize;
+      vertical-align: middle;
     }
 
     p {
       grid-column: 2;
       max-width: none;
-      font-size: 9px;
-      line-height: 1.35;
+      font-family: @font;
+      font-size: 12px;
+      font-weight: 500;
+      font-style: normal;
+      line-height: 1;
+      letter-spacing: 0;
+      text-align: left;
     }
   }
 
   .step-number {
-    width: 16px;
-    height: 16px;
-    font-size: 10px;
+    width: 20px;
+    height: 20px;
+    font-family: DIN;
+    font-size: 13.5px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: 0;
+    text-align: center;
+    text-transform: capitalize;
+    vertical-align: middle;
+  }
+
+  .community-section {
+    padding-top: 34px;
+    padding-bottom: 34px;
+
+    .section-heading {
+      margin-bottom: 24px;
+    }
   }
 
   .signup-section,
-  .steps-section,
-  .community-section {
-    padding-top: 52px;
-    padding-bottom: 52px;
+  .steps-section {
+    padding-top: 34px;
+    padding-bottom: 34px;
+
+    .section-heading {
+      margin-bottom: 24px;
+    }
   }
 
   .signup-grid {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 8px;
   }
 
   .signup-copy {
@@ -432,12 +533,25 @@
       order: 1;
       max-width: 260px;
       margin: 0 auto;
+      font-family: @font;
+      font-size: 20px;
+      font-weight: 700;
+      font-style: normal;
+      line-height: 1.2;
+      letter-spacing: 0;
     }
 
     p {
       order: 2;
       max-width: 320px;
-      margin: -8px auto 8px;
+      margin: 0 auto;
+      font-family: @font;
+      font-size: 12px;
+      font-weight: 400;
+      font-style: normal;
+      line-height: 1;
+      letter-spacing: 0;
+      color: var(--Text-text-secondary, #d1d1d2);
     }
 
     .btn {
@@ -453,18 +567,20 @@
   .selling-grid {
     order: 3;
     width: 100%;
+    margin-top: 16px;
     gap: 16px;
 
     article {
       min-height: 92px;
-      gap: 7px;
-      padding: 22px 32px;
-      border-radius: 24px;
+      gap: 8px;
+      padding: 16px;
+      border-radius: 16px;
+      opacity: 1;
       background: var(--Background-fill-fill-card_3, #ffffff0d);
     }
 
     article:nth-child(2) {
-      order: 4;
+      order: 3;
     }
 
     article:nth-child(3) {
@@ -472,91 +588,145 @@
     }
 
     article:nth-child(4) {
-      order: 3;
+      order: 4;
     }
 
     h3 {
       color: @text;
-      font-size: 26px;
-      line-height: 1.05;
+      font-family: @font;
+      font-size: 14px;
+      font-weight: 700;
+      font-style: normal;
+      line-height: 1.4;
+      letter-spacing: 0;
+      text-transform: capitalize;
+      vertical-align: bottom;
+      white-space: nowrap;
 
       span {
-        display: block;
-        margin-bottom: 18px;
+        display: inline;
+        margin-bottom: 0;
         color: @yellow;
+        font-family: @font;
+        font-size: 14px;
+        font-weight: 700;
+        font-style: normal;
+        line-height: 1.4;
+        letter-spacing: 0;
+        text-transform: capitalize;
+        vertical-align: bottom;
       }
     }
 
     p {
       color: #8b8b8e;
-      font-size: 22px;
-      line-height: 1.25;
-    }
-
-    article:nth-child(4) {
-      h3 {
-        text-align: center;
-      }
-
-      h3 span {
-        margin-bottom: 18px;
-      }
-
-      h3 em {
-        display: none;
-      }
+      font-family: @font;
+      font-size: 12px;
+      font-weight: 400;
+      font-style: normal;
+      line-height: 1;
+      letter-spacing: 0;
     }
   }
 
   .mobile-signup-cta {
     order: 4;
     display: inline-flex;
-    min-height: 112px;
-    height: 112px;
-    margin-top: 48px;
-    border-radius: 999px;
-    font-size: 34px;
+    height: 56px;
+    min-height: 56px;
+    gap: 8px;
+    margin-top: 32px;
+    padding-right: 24px;
+    padding-left: 24px;
+    border-radius: 100px;
+    opacity: 1;
+    background: var(--Button-Tertiary-btn-tertiary-default, #ffffff);
+    color: var(--Text-text-other, #161616);
+    font-family: @font;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: 0;
   }
 
   .community-grid {
     gap: 12px;
 
     article {
+      position: relative;
       width: 100%;
-      height: 126px;
-      padding: 14px 18px;
-      border-radius: 8px;
+      height: 182px;
+      gap: 0;
+      padding: 24px;
+      border: 1px solid var(--Border-border-button, #474747);
+      border-radius: 16px;
+      opacity: 1;
     }
 
     h3 {
-      margin-bottom: 5px;
-      font-size: 12px;
+      margin: 0;
+      color: @text;
+      font-family: @font;
+      font-size: 16px;
+      font-weight: 700;
+      font-style: normal;
+      line-height: 1;
+      letter-spacing: 0;
+      text-align: center;
     }
 
     p {
-      font-size: 9px;
-      line-height: 1.25;
+      margin: 8px 0 0;
+      color: var(--Text-text-tertiary, #8b8b8e);
+      font-family: @font;
+      font-size: 12px;
+      font-weight: 400;
+      font-style: normal;
+      line-height: 1;
+      letter-spacing: 0;
+      text-align: center;
+      width: 100%;
+      min-width: 0;
+      max-width: 300px;
+      white-space: normal;
+      overflow-wrap: normal;
     }
   }
 
   .community-icon {
-    width: 44px;
-    height: 44px;
-    margin-bottom: 8px;
+    position: relative;
+    top: 1.6px;
+    left: 0.8px;
+    width: 64px;
+    height: 64px;
+    margin-bottom: 12px;
+    opacity: 1;
   }
 
   .center-action {
     margin-top: 18px;
 
     .btn {
-      min-height: 44px;
-      height: 44px;
-      font-size: 12px;
+      height: 56px;
+      min-height: 56px;
+      padding-right: 28px;
+      padding-left: 28px;
+      border-radius: 100px;
+      background: var(--button-primary-2026-btn-primary-default-2026, #ffeb52);
+      color: var(--text-text-black, #000000);
+      font-family: @font;
+      font-size: 16px;
+      font-weight: 700;
+      font-style: normal;
+      line-height: 1;
+      letter-spacing: 0;
+      opacity: 1;
     }
   }
 
   .site-footer {
-    padding: 0 0 28px;
+    padding: 58px 0 24px;
   }
 
   .footer-grid {
@@ -571,10 +741,14 @@
 
   .footer-community-title {
     display: block;
-    margin: 0 0 12px;
-    color: #d1d1d2;
-    font-size: 12px;
+    margin: 0 0 24px;
+    color: var(--Text-text-secondary, #d1d1d2);
+    font-family: @font;
+    font-size: 16px;
     font-weight: 500;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: 0;
   }
 
   .socials {
@@ -582,8 +756,8 @@
 
     a,
     img {
-      width: 20px;
-      height: 20px;
+      width: 28px;
+      height: 28px;
     }
   }
 
@@ -660,14 +834,10 @@
     width: auto;
   }
 
-  .steps h3 {
-    font-size: 12px;
-  }
-
   .mobile-signup-cta {
-    min-height: 112px;
-    height: 112px;
-    font-size: 34px;
+    height: 56px;
+    min-height: 56px;
+    font-size: 16px;
   }
 
 }
