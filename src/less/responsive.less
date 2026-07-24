@@ -64,6 +64,277 @@
   }
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container,
+  .hero-grid,
+  .rewards-section .container {
+    width: calc(100% - 32px);
+  }
+
+  .section {
+    padding: 64px 0;
+  }
+
+  .site-header {
+    padding: 18px 0;
+  }
+
+  .hero {
+    padding: 48px 0 52px;
+  }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(320px, 42vw);
+    align-items: center;
+    height: auto;
+    gap: 32px;
+  }
+
+  .hero-copy {
+    h1 {
+      max-width: 380px;
+      font-size: 31px;
+      line-height: 1.22;
+
+      strong {
+        font-size: 31px;
+      }
+    }
+  }
+
+  .hero-subtitle {
+    margin: 14px 0 22px;
+    font-size: 15px;
+  }
+
+  .countdown {
+    gap: 7px;
+  }
+
+  .time-box {
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    border-radius: 6px;
+
+    span {
+      width: 100%;
+      height: 100%;
+      font-size: 14px;
+    }
+  }
+
+  .hero-cta {
+    min-width: 236px;
+    min-height: 52px;
+  }
+
+  .profile-card {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    justify-self: end;
+    border-radius: 20px;
+  }
+
+  .profile-card-footer {
+    width: 100%;
+    height: 58px;
+    padding: 10px 10px 10px 18px;
+    border-radius: 20px;
+
+    > span {
+      font-size: 20px;
+    }
+  }
+
+  .profile-actions {
+    width: auto;
+    height: 38px;
+  }
+
+  .profile-action {
+    width: 38px;
+    height: 38px;
+  }
+
+  .rewards-section,
+  .steps-section,
+  .signup-section,
+  .community-section {
+    padding-top: 52px;
+    padding-bottom: 52px;
+
+    .section-heading {
+      margin-bottom: 34px;
+    }
+  }
+
+  #rewards-title,
+  #steps-title,
+  #community-title,
+  .signup-copy h2 {
+    font-size: 28px;
+    line-height: 1.25;
+  }
+
+  .reward-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .steps {
+    max-width: 680px;
+    gap: 24px;
+
+    h3 {
+      margin-top: 14px;
+      font-size: 19px;
+      line-height: 1.25;
+    }
+
+    p {
+      max-width: 210px;
+      font-size: 12px;
+      line-height: 1.12;
+    }
+  }
+
+  .step-number {
+    width: 26px;
+    height: 26px;
+    font-size: 15px;
+  }
+
+  .signup-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .signup-copy {
+    text-align: center;
+
+    h2,
+    p {
+      max-width: 680px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    p {
+      margin-top: 10px;
+      margin-bottom: 28px;
+      color: #d1d1d2;
+      font-size: 14px;
+      line-height: 1.35;
+    }
+
+    .btn {
+      display: none;
+    }
+  }
+
+  .selling-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+    gap: 14px;
+
+    article {
+      min-height: 116px;
+      padding: 24px;
+      border-radius: 12px;
+    }
+
+    p {
+      line-height: 1.25;
+    }
+  }
+
+  .mobile-signup-cta {
+    display: inline-flex;
+    align-self: center;
+    width: 246px;
+    height: 56px;
+    min-height: 56px;
+  }
+
+  .community-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+
+    article {
+      width: 100%;
+      height: 232px;
+      padding: 22px 16px;
+      border-radius: 16px;
+    }
+
+    h3 {
+      font-size: 15px;
+      line-height: 1.15;
+    }
+
+    p {
+      font-size: 13px;
+      line-height: 1.15;
+    }
+  }
+
+  .community-icon {
+    width: 72px;
+    height: 72px;
+    margin-bottom: 14px;
+  }
+
+  .center-action {
+    margin-top: 34px;
+
+    .btn {
+      width: 260px;
+    }
+  }
+
+  .site-footer {
+    padding: 72px 0 32px;
+  }
+
+  .footer-grid {
+    display: block;
+  }
+
+  .footer-brand {
+    .brand {
+      display: none;
+    }
+  }
+
+  .footer-community-title {
+    display: block;
+    margin: 0 0 24px;
+    color: var(--Text-text-secondary, #d1d1d2);
+    font-family: @font;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+  }
+
+  .socials {
+    gap: 16px;
+
+    a,
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .footer-download {
+    display: none;
+  }
+}
+
 @media (max-width: 767px) {
   .container {
     width: calc(100% - 32px);
