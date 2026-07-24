@@ -85,22 +85,30 @@
 
   .hero-grid {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(320px, 42vw);
+    grid-template-columns: minmax(0, 1fr) minmax(270px, 38vw);
     align-items: center;
     height: auto;
-    gap: 32px;
+    gap: 24px;
   }
 
   .hero-copy {
     h1 {
-      max-width: 380px;
-      font-size: 31px;
+      max-width: 520px;
+      font-size: clamp(22px, 3vw, 31px);
       line-height: 1.22;
 
       strong {
-        font-size: 31px;
+        font-size: clamp(22px, 3vw, 31px);
       }
     }
+  }
+
+  .mobile-break {
+    display: block;
+  }
+
+  .desktop-break {
+    display: none;
   }
 
   .hero-subtitle {
